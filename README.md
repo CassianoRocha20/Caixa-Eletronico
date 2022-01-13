@@ -1,5 +1,3 @@
-# Caixa-public class ProgramaPrincipal {
-	
 	static Cliente cliente = new Cliente ("Amanda cunha", "Rua gamboa, 45");
 	static Conta conta = new Conta (1, 200, 300, cliente);
 	static Scanner teclado = new Scanner(System.in);
@@ -10,7 +8,7 @@
 		float valor = teclado.nextFloat();
 		if(valor > 0 ) {
 		    conta.depositar(valor);
-		    System.out.println("DEPOSITO EDETUADO COM SUCESSO.");
+		    System.out.println("DEPOSITO EFETUADO COM SUCESSO.");
 	}else {
 		System.out.println("O valor precisa ser positivo. ");
 	   }
@@ -22,6 +20,7 @@
 		float valor = teclado.nextFloat();
 		if(valor > 0 ) {
 		    conta.sacar(valor);
+		    System.out.println("SAQUE REALIZADO COM SUCESSO.");
 	}else {
 		System.out.println("O valor precisa ser positivo. ");
 	   }
@@ -35,7 +34,7 @@
 		int opcao = 0;
 		System.out.println("Bem-vindo ao banco santander");
 	
-		do {3
+		do {
 			
 			System.out.println("1 - Depositar ");
 			System.out.println("2 - Sacar ");
